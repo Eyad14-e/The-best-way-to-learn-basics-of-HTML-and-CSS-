@@ -1,0 +1,137 @@
+/* General styles */
+* {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    height: 100%;
+}
+
+.sidebar h2 {
+    color: #fff;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.sidebar nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+.main-content {
+    margin-left: 260px;
+    padding: 40px;
+}
+
+.hero {
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    padding: 50px;
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.cta-button {
+    background-color: #ff6600;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: #e65c00;
+}
+
+/* Chapter Styles */
+.chapter {
+    background-color: white;
+    padding: 20px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chapter h2 {
+    color: #007bff;
+}
+
+.chapter pre {
+    background-color: #2e2e2e;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        position: static;
+        margin-bottom: 20px;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .hero {
+        padding: 30px;
+    }
+
+    .cta-button {
+        padding: 8px 16px;
+    }
+}
